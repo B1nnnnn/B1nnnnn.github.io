@@ -14,9 +14,11 @@
         padding: 0;
         font-family: "微軟正黑體";
     }
-
-    #bnrvideo{
-        background: rgba(125,125, 125, 1);
+    .wirtebnr{
+        margin: auto;
+        max-width: 1170px;
+    }
+    #bnrvideo{        
         z-index: 99999;
         width: 50%;
         height: 10vh;
@@ -31,10 +33,13 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 70%;
     }
     .cusRadius{
         border-radius: .5cm;
+    }
+    .bgCus0{
+        background-color: rgba(0, 0, 0, 0.7);
     }
     .bgCus1{
         background-color: yellow;
@@ -52,30 +57,31 @@
 
 <body>
 
-    <!-- <div class="bgCus">
-        <video loop="loop" muted width="100%" height="auto">
-            <source type="video/mp4" src="video/Fountainpen (Fountain pen) Writing.mp4">
-        </video>
-    </div> -->
+    <div class="bgCus0" id="banner">
+        <div class="wirtebnr">
+            <video loop="loop" autoplay muted width="100%" height="auto">
+                <source type="video/mp4" src="video/Fountainpen (Fountain pen) Writing.mp4">
+            </video>
+        </div>
+    </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
-        <a class="navbar-brand mr-5 pr-5" href="#">筆的圖書館</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top text-center">
+        <a class="navbar-brand mr-5 pr-5" href="#banner">筆的圖書館</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse pl-5" id="navbarNavAltMarkup">
             <div class="navbar-nav justify-content-between w-100">
-                <a class="nav-item nav-link" href="#">筆的歷史 </a>
-                <a class="nav-item nav-link" href="#">筆芯種類</a>
-                <a class="nav-item nav-link" href="#">鋼筆介紹</a>
-                <a class="nav-item nav-link" href="#">筆的品牌</a>
-                <a class="nav-item nav-link" href="#">相關小知識</a>
+                <a class="nav-item nav-link" href="#history">筆的歷史 </a>
+                <a class="nav-item nav-link" href="#kinds">筆芯種類</a>
+                <a class="nav-item nav-link" href="#brands">筆的品牌</a>
+                <a class="nav-item nav-link mr-sm-5" href="#news">相關小知識</a>
             </div>
         </div>
     </nav>
     <!-- 筆的歷史 -->
-    <section>
+    <section id="history">
         <h1 class="text-center pt-4 pb-3">筆的歷史</h1>
         <div class="container">
             <div class="row">
@@ -122,7 +128,7 @@
         </div>
     </section>
     <!-- 筆芯種類 -->
-    <section>
+    <section id="kinds">
         <h1 class="text-center pt-4 pb-3">筆芯種類</h1>
         <div class="d-flex flex-wrap container">
             <div class="col-6 col-sm-3 bgCus1 ">
@@ -146,115 +152,124 @@
         </div>
     </section>
     <!-- 筆的品牌 -->
-    <section class="container">
+    <section class="container" id="brands">
         <h1 class="text-center pt-4 pb-3">筆的品牌</h1>
         <!-- 台灣 -->
-        <div class="d-flex justify-content-around text-center flex-wrap">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">文明鋼筆</p>
+        <div class="mb-3">
+            <h2 class="text-center mb-3">台灣</h2>
+            <div class="d-flex justify-content-around text-center flex-wrap">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">文明鋼筆</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">雄獅</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">雄獅</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">三文堂</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">三文堂</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 日本 -->
-        <div class="d-flex justify-content-around text-center flex-wrap">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">三菱鉛筆</p>
+        <div class="mb-3">
+            <h2 class="text-center mb-3">日本</h2>
+            <div class="d-flex justify-content-around text-center flex-wrap">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">三菱鉛筆</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">飛龍</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">飛龍</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">百樂</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">百樂</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">寫樂</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">寫樂</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">白金</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">白金</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- 歐美 -->
-        <div class="d-flex justify-content-around text-center flex-wrap">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">BIC</p>
+        <div class="mb-3">
+            <h2 class="text-center mb-3">歐美</h2>
+            <div class="d-flex justify-content-around text-center flex-wrap">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">BIC</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">派克</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">派克</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">高仕</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">高仕</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">卡達</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">卡達</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">百利金</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">百利金</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">凌美</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">凌美</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">萬寶龍</p>
+                <div class="card mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">萬寶龍</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- 相關小知識 -->
-    <section class="container mb-5">
+    <section class="container mb-5" id="news">
         <h1 class="text-center pt-4 pb-3">相關小知識</h1>
         <div class="d-flex justify-content-around">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title text-center">相關小知識1</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -262,7 +277,7 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title text-center">相關小知識2</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -270,7 +285,7 @@
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title text-center">相關小知識3</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -283,15 +298,15 @@
         <div class="container ">
             <p class="m-0">資料如有錯誤，請聯繫:bin840318@gmail.com</p>
         </div>
-        </footer>
+    </footer>
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

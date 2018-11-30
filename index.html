@@ -43,15 +43,49 @@
     }
     .bgCus1{
         background-color: yellow;
-        height: 290px;
+        height: 100%;
     }
     .bgCus2{
         background-color: green;
-        height: 290px;
+        height: 100%;
     }
     .textlineheight{
-        line-height: 290px;
+        line-height: inherit;
     }
+    .borstyle{
+        border-width: 2px;
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+        
+    }
+    .midd{
+        text-align: center;        
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;	
+    }
+    .introauto{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;	
+    }
+    @media screen and (min-width: 450px){
+        #kinds #bisin p{
+        font-size: 2em;
+       
+        }
+    }
+    @media screen and (max-width: 450px){
+        #kinds #bisin p{
+        font-size: 1.5em;
+       
+        }
+    }
+
     </style>
 </head>
 
@@ -82,7 +116,9 @@
     </nav>
     <!-- 筆的歷史 -->
     <section id="history">
-        <h1 class="text-center pt-4 pb-3">筆的歷史</h1>
+        <div class="midd">
+            <h1 class="mt-4 mb-3 borstyle d-inline-block">筆的歷史</h1>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-12 mt-5 mb-5 text-center">
@@ -129,31 +165,36 @@
     </section>
     <!-- 筆芯種類 -->
     <section id="kinds">
-        <h1 class="text-center pt-4 pb-3">筆芯種類</h1>
-        <div class="d-flex flex-wrap container">
-            <div class="col-6 col-sm-3 bgCus1 ">
-                <h1 class="textlineheight text-center m-0">筆尖</h1>
+        <div class="midd">
+            <h1 class="mt-4 mb-3 borstyle d-inline-block">筆芯種類</h1>
+        </div>
+        <div class="d-flex flex-wrap container" id="bisin">
+            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center">
+                <p class="textlineheight text-center m-0 ">筆尖</p>
             </div>
             <div class="col-6 col-sm-3 bgCus2 p-0">
                 <img src="img/筆尖比較表290290.jpg" alt="">
             </div>
-            <div class="col-6 col-sm-3 bgCus1">
-                <h1 class="textlineheight text-center m-0">卡水</h1>
+            
+            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center">
+                <p class="textlineheight text-center m-0">卡水</p>
             </div>
             <div class="col-6 col-sm-3 bgCus2"></div>
             <div class="col-6 col-sm-3 bgCus1"></div>
-            <div class="col-6 col-sm-3 bgCus2">
-                <h1 class="textlineheight text-center m-0">吸墨器</h1>
+            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center">
+                <p class="textlineheight text-center m-0">吸墨器</p>
             </div>
             <div class="col-6 col-sm-3 bgCus1"></div>
-            <div class="col-6 col-sm-3 bgCus2">
-                <h1 class="textlineheight text-center m-0">墨水瓶</h1>
+            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center">
+                <p class="textlineheight text-center m-0">墨水瓶</p>
             </div>
         </div>
     </section>
     <!-- 筆的品牌 -->
     <section class="container" id="brands">
-        <h1 class="text-center pt-4 pb-3">筆的品牌</h1>
+        <div class="midd">
+            <h1 class="mt-4 mb-3 borstyle d-inline-block">筆的品牌</h1>
+        </div>
         <!-- 台灣 -->
         <div class="mb-3">
             <h2 class="text-center mb-3">台灣</h2>
@@ -265,7 +306,9 @@
     </section>
     <!-- 相關小知識 -->
     <section class="container mb-5" id="news">
-        <h1 class="text-center pt-4 pb-3">相關小知識</h1>
+        <div class="midd">
+            <h1 class="mt-4 mb-3 borstyle d-inline-block">相關小知識</h1>
+        </div>
         <div class="d-flex justify-content-around">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">

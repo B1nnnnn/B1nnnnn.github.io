@@ -23,9 +23,6 @@
         width: 50%;
         height: 10vh;
     }
-    .bgCus{
-       background-color: #343a40;
-    }
     .container{
         max-width: 1170px;
     }
@@ -38,16 +35,30 @@
     .cusRadius{
         border-radius: .5cm;
     }
+    .bgCus{
+       background-color: #343a40;
+    }
     .bgCus0{
         background-color: rgba(0, 0, 0, 0.7);
     }
-    .bgCus1{
-        background-color: yellow;
-        height: 100%;
+    
+    /* 筆的歷史 */
+    .bgCus_history1{
+        background-color: #ECEDEC;
     }
-    .bgCus2{
-        background-color: green;
-        height: 100%;
+    .bgCus_history2{
+        background-color: #FFFFFF;
+    }
+    .bgCus_history3{
+        background-color: #A8CFA3;
+    }
+    /* 筆芯種類 */
+    .bgCus_bisin{
+        background-color: #CFB1BF;
+    }
+    /* 筆的品牌 */
+    .bgCus_brand{
+        background-color: #B8CFDB;
     }
     .textlineheight{
         line-height: inherit;
@@ -91,15 +102,15 @@
 
 <body>
 
-    <!-- <div class="bgCus0" id="banner">
+    <div class="bgCus0" id="banner">
         <div class="wirtebnr">
             <video loop="loop" autoplay muted width="100%" height="auto">
                 <source type="video/mp4" src="video/Fountainpen (Fountain pen) Writing.mp4">
             </video>
         </div>
-    </div> -->
+    </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top text-center">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top text-center ">
         <a class="navbar-brand mr-5 pr-5" href="#banner">筆的圖書館</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,13 +126,13 @@
         </div>
     </nav>
     <!-- 筆的歷史 -->
-    <section id="history">
+    <section id="history" class="bgCus_history1">
         <div class="midd">
             <h1 class="mt-4 mb-3 borstyle d-inline-block">筆的歷史</h1>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-12 mt-5 mb-5 text-center">
+                <div class="col-sm-3 col-12 pt-5 pb-5 text-center bgCus_history2">
                     <div class="nav flex-sm-column nav-pills mt-4 justify-content-between" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
                         <a class="nav-link mb-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
@@ -134,7 +145,7 @@
                             role="tab" aria-controls="v-pills-settings" aria-selected="false">原子筆</a>
                     </div>
                 </div>
-                <div class="col-9 mx-auto">
+                <div class="col-9 mx-auto bgCus_history3">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                             <img src="img/沾水筆.jpg" alt="沾水筆" class="imgcenter mb-3 mt-3 cusRadius">
@@ -154,8 +165,7 @@
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                             <img src="img/原子筆.jpg" alt="" class="imgcenter mb-3 mt-3 cusRadius">
                             <p>
-                                1930年代匈牙利記者拜羅Mr.Biro發明了第一支原子筆（Ball Point Pen）-
-                                一種用滾動的小球作為筆尖的筆，可以在手帕上、木材的表面上寫字，且不必灌墨水。筆尖有一顆小鋼珠，它是由鉻和鋼的合金所製成的，非常耐壓、耐磨；小圓球在筆尖的窩裡，如果把筆滑過紙面，小圓球一滾動，就把頂在上方筆管內的墨水帶到紙上。這個小圓球是原子筆最大的特色所在。
+                                筆尖有一顆小鋼珠，它是由鉻和鋼的合金所製成的，非常耐壓、耐磨；小圓球在筆尖的窩裡，如果把筆滑過紙面，小圓球一滾動，就把頂在上方筆管內的墨水帶到紙上。這個小圓球是原子筆最大的特色所在。
                             </p>
                         </div>
                     </div>
@@ -164,16 +174,16 @@
         </div>
     </section>
     <!-- 筆芯種類 -->
-    <section id="kinds">
+    <section id="kinds" class="bgCus_bisin pb-4">
         <div class="midd">
             <h1 class="mt-4 mb-3 borstyle d-inline-block">筆芯種類</h1>
         </div>
         <div class="d-flex flex-wrap container" id="bisin">
-            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center" data-toggle="modal"
+            <div class="col-6 col-sm-3 bgCus_history1 introauto d-flex justify-content-center align-items-center" data-toggle="modal"
                 data-target="#bisinnib">
                 <p class="textlineheight text-center m-0 ">筆尖</p>
             </div>
-            <div class="col-6 col-sm-3 bgCus2 p-0" data-toggle="modal" data-target="#bisinnib">
+            <div class="col-6 col-sm-3 bgCus_history1 p-0" data-toggle="modal" data-target="#bisinnib">
                 <img src="img/筆尖比較表290290.jpg" alt="">
             </div>
             <!-- Modal-bisinib -->
@@ -202,13 +212,13 @@
                 </div>
             </div>
 
-            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center">
+            <div class="col-6 col-sm-3 bgCus_history1 introauto d-flex justify-content-center align-items-center">
                 <p class="textlineheight text-center m-0">卡水</p>
             </div>
             <div class="col-6 col-sm-3 bgCus2 p-0">
                 <img src="img/卡水290290.jpg" alt="">
             </div>
-            <div class="col-6 col-sm-3 bgCus1 p-0" data-toggle="modal" data-target="#inkAbsorber">
+            <div class="col-6 col-sm-3 bgCus_history1 p-0" data-toggle="modal" data-target="#inkAbsorber">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -223,43 +233,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#inkAbsorber">
+            <div class="col-6 col-sm-3 bgCus_history1 introauto d-flex justify-content-center align-items-center" data-toggle="modal"
+                data-target="#inkAbsorber">
                 <p class="textlineheight text-center m-0">吸墨器</p>
             </div>
             <!-- Modal-inkAbsorber -->
-<div class="modal fade" id="inkAbsorber" tabindex="-1" role="dialog" aria-labelledby="inkAbsorberLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="inkAbsorberLabel">吸墨器</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal fade" id="inkAbsorber" tabindex="-1" role="dialog" aria-labelledby="inkAbsorberLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="inkAbsorberLabel">吸墨器</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>壓囊吸墨器</h3>
+                            <img class="d-block w-100" src="img/吸墨器-壓囊290290.jpg" alt="">
+                            <h3>推拉吸墨器</h3>
+                            <img class="d-block w-100" src="img/吸墨器-推拉290290.jpg" alt="">
+                            <h3>旋轉吸墨器</h3>
+                            <img class="d-block w-100" src="img/吸墨器-旋轉290290.jpg" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              <h3>壓囊吸墨器</h3>
-              <img class="d-block w-100" src="img/吸墨器-壓囊290290.jpg" alt="">
-              <h3>推拉吸墨器</h3>
-              <img class="d-block w-100" src="img/吸墨器-推拉290290.jpg" alt="">
-              <h3>旋轉吸墨器</h3>
-              <img class="d-block w-100" src="img/吸墨器-旋轉290290.jpg" alt="">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
             <div class="col-6 col-sm-3 bgCus1  p-0">
                 <img src="img/墨水瓶290290.jpg" alt="">
             </div>
-            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center">
+            <div class="col-6 col-sm-3 bgCus_history1 introauto d-flex justify-content-center align-items-center">
                 <p class="textlineheight text-center m-0">墨水瓶</p>
             </div>
         </div>
     </section>
     <!-- 筆的品牌 -->
-    <section class="container" id="brands">
+    <section class="container bgCus_brand" id="brands">
         <div class="midd">
             <h1 class="mt-4 mb-3 borstyle d-inline-block">筆的品牌</h1>
         </div>
@@ -267,7 +279,7 @@
         <div class="mb-3">
             <h2 class="text-center mb-3">台灣</h2>
             <div class="d-flex justify-content-around text-center flex-wrap">
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#skb">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#skb">
                     <img class="card-img-top" src="img/logo/SKB-b.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">文明鋼筆</p>
@@ -297,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#lion">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#lion">
                     <img class="card-img-top" src="img/logo/lion-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">雄獅</p>
@@ -323,7 +335,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#twsbi">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#twsbi">
                     <img class="card-img-top " src="img/logo/TWSBI-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">三文堂</p>
@@ -378,7 +390,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#pentel">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#pentel">
                     <img class="card-img-top" src="img/logo/Pentel-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">飛龍</p>
@@ -410,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#pilot">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#pilot">
                     <img class="card-img-top" src="img/logo/Pilot-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">百樂</p>
@@ -435,7 +447,7 @@
                     </div>
                 </div>
 
-                <div class="card  mb-3" style="width: 18rem" data-toggle="modal" data-target="#sailor">
+                <div class="card  mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#sailor">
                     <img class="card-img-top" src="img/logo/sailor-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">寫樂</p>
@@ -464,7 +476,7 @@
                     </div>
                 </div>
 
-                <div class="card  mb-3" style="width: 18rem" data-toggle="modal" data-target="#platinum">
+                <div class="card  mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#platinum">
                     <img class="card-img-top" src="img/logo/platinum-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">白金</p>
@@ -497,10 +509,10 @@
             </div>
         </div>
         <!-- 歐美 -->
-        <div class="mb-3">
+        <div>
             <h2 class="text-center mb-3">歐美</h2>
             <div class="d-flex justify-content-around text-center flex-wrap">
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#bic">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#bic">
                     <img class="card-img-top" src="img/logo/bic.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">BIC</p>
@@ -526,7 +538,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#parker">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#parker">
                     <img class="card-img-top" src="img/logo/parker-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">派克</p>
@@ -553,7 +565,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#cross">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#cross">
                     <img class="card-img-top" src="img/logo/Cross-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">高仕</p>
@@ -580,7 +592,7 @@
                 </div>
 
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#caran-dache">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#caran-dache">
                     <img class="card-img-top" src="img/logo/caran-dache-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">卡達</p>
@@ -619,7 +631,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#pelikan">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#pelikan">
                     <img class="card-img-top" src="img/logo/pelikan-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">百利金</p>
@@ -654,7 +666,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#lamy">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#lamy">
                     <img class="card-img-top" src="img/logo/LAMY-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">凌美</p>
@@ -685,7 +697,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-3" style="width: 18rem" data-toggle="modal" data-target="#montblanc">
+                <div class="card mb-3 bgCus_history1" style="width: 18rem" data-toggle="modal" data-target="#montblanc">
                     <img class="card-img-top" src="img/logo/montblanc.png" alt="">
                     <div class="card-body">
                         <p class="card-text">萬寶龍</p>
@@ -716,31 +728,31 @@
         </div>
     </section>
     <!-- 相關小知識 -->
-    <section class="container mb-5" id="news">
+    <section class="container pb-5 bgCus_history3" id="news">
         <div class="midd">
             <h1 class="mt-4 mb-3 borstyle d-inline-block">相關小知識</h1>
         </div>
-        <div class="d-flex justify-content-around">
-            <div class="card" style="width: 18rem">
-                <div class="card-body">
-                    <h5 class="card-title text-center">擦擦筆的顏色可逆</h5>
+        <div class="d-flex justify-content-around flex-wrap">
+            <div class="card col-12 col-sm-4 mb-3 mb-sm-0" style="width: 18rem">
+                <div class="card-body p-0 ">
+                    <h4 class="card-title text-center font-weight-bold">擦擦筆的顏色可逆</h4>
 
                     <p class="card-text">高於60度字跡就會消失，但是低於零下十度，字跡就會回復，但是並不會跟一開始寫下去時的顏色一樣濃。
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem">
-                <div class="card-body">
-                    <h5 class="card-title text-center">筆芯裡的果凍</h5>
+            <div class="card col-12 col-sm-4 mb-3 mb-sm-0" style="width: 18rem">
+                <div class="card-body p-0">
+                    <h4 class="card-title text-center font-weight-bold">筆芯裡的果凍</h4>
 
                     <p class="card-text">一般我們稱后塞油,真正學名是鋰基酯
                         功能是隔絕空氣避免墨水乾掉，另外也提供壓力推進出墨
                     </p>
                 </div>
             </div>
-            <div class="card" style="width: 18rem">
-                <div class="card-body">
-                    <h5 class="card-title text-center">筆頭跑出一根針</h5>
+            <div class="card col-12 col-sm-4 mb-3 mb-sm-0" style="width: 18rem">
+                <div class="card-body p-0">
+                    <h4 class="card-title text-center font-weight-bold">筆頭跑出一根針</h4>
                     <p class="card-text">中性(gel)墨水為了解決遇到空氣會乾掉的問題，除了筆蓋，另外還有設計彈簧筆珠(spring tip)
                         有兩顆珠頭，一內一外中間夾一個小彈簧，平時隔絕空氣，書寫時透過彈簧頂開裡面那顆珠頭讓墨水流下。<br>
                         假如你看到小針就是彈簧跑出來‧‧‧可以換一支新筆了!
@@ -749,7 +761,6 @@
             </div>
         </div>
     </section>
-
     <footer class="text-center text-white bg-dark pt-3 pb-3">
         <div class="container ">
             <p class="m-0">資料如有錯誤，請聯繫:</p>

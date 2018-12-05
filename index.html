@@ -169,11 +169,37 @@
             <h1 class="mt-4 mb-3 borstyle d-inline-block">筆芯種類</h1>
         </div>
         <div class="d-flex flex-wrap container" id="bisin">
-            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center">
+            <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center" data-toggle="modal"
+                data-target="#bisinnib">
                 <p class="textlineheight text-center m-0 ">筆尖</p>
             </div>
-            <div class="col-6 col-sm-3 bgCus2 p-0">
+            <div class="col-6 col-sm-3 bgCus2 p-0" data-toggle="modal" data-target="#bisinnib">
                 <img src="img/筆尖比較表290290.jpg" alt="">
+            </div>
+            <!-- Modal-bisinib -->
+            <div class="modal fade" id="bisinnib" tabindex="-1" role="dialog" aria-labelledby="bisinnibLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bisinnibLabel">歐美筆尖標記和日系筆的對應</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/筆尖比較表290290.jpg" alt="">
+                            <ul>
+                                <li>
+                                    通常同樣粗細的情況下，日系筆尖會比歐美的筆尖還細。
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="col-6 col-sm-3 bgCus1 introauto d-flex justify-content-center align-items-center">
@@ -182,7 +208,7 @@
             <div class="col-6 col-sm-3 bgCus2 p-0">
                 <img src="img/卡水290290.jpg" alt="">
             </div>
-            <div class="col-6 col-sm-3 bgCus1 p-0">
+            <div class="col-6 col-sm-3 bgCus1 p-0" data-toggle="modal" data-target="#inkAbsorber">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -197,9 +223,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center">
+            <div class="col-6 col-sm-3 bgCus2 introauto d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#inkAbsorber">
                 <p class="textlineheight text-center m-0">吸墨器</p>
             </div>
+            <!-- Modal-inkAbsorber -->
+<div class="modal fade" id="inkAbsorber" tabindex="-1" role="dialog" aria-labelledby="inkAbsorberLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="inkAbsorberLabel">吸墨器</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>壓囊吸墨器</h3>
+              <img class="d-block w-100" src="img/吸墨器-壓囊290290.jpg" alt="">
+              <h3>推拉吸墨器</h3>
+              <img class="d-block w-100" src="img/吸墨器-推拉290290.jpg" alt="">
+              <h3>旋轉吸墨器</h3>
+              <img class="d-block w-100" src="img/吸墨器-旋轉290290.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
             <div class="col-6 col-sm-3 bgCus1  p-0">
                 <img src="img/墨水瓶290290.jpg" alt="">
             </div>
@@ -642,25 +692,26 @@
                     </div>
                 </div>
                 <!-- Modal-montblanc -->
-                <div class="modal fade" id="montblanc" tabindex="-1" role="dialog" aria-labelledby="montblancLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <img class="card-img-top" src="img/logo/montblanc.png" alt="Card image cap">
-                                </div>
-                                <div class="modal-body">
-                                    <p class="text-left">
-                                            品牌故事始於1924年問世的萬寶龍大師傑作（大班）系列鋼筆。<br>
-                                            此著名書寫工具結合完美手工技術和精湛歐洲工藝，奠定無可替代的地位。<br>
-                                            然而，品牌的書寫工具發展更不曾因此而止步。推出各個精美系列，包括鑲嵌寶石的萬寶龍寶曦系列、優美時尚的萬寶龍星際行者系列，以及其他廣受推崇的作品。
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
+                <div class="modal fade" id="montblanc" tabindex="-1" role="dialog" aria-labelledby="montblancLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img class="card-img-top" src="img/logo/montblanc.png" alt="Card image cap">
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-left">
+                                    品牌故事始於1924年問世的萬寶龍大師傑作（大班）系列鋼筆。<br>
+                                    此著名書寫工具結合完美手工技術和精湛歐洲工藝，奠定無可替代的地位。<br>
+                                    然而，品牌的書寫工具發展更不曾因此而止步。推出各個精美系列，包括鑲嵌寶石的萬寶龍寶曦系列、優美時尚的萬寶龍星際行者系列，以及其他廣受推崇的作品。
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </section>
@@ -673,27 +724,27 @@
             <div class="card" style="width: 18rem">
                 <div class="card-body">
                     <h5 class="card-title text-center">擦擦筆的顏色可逆</h5>
-                    
+
                     <p class="card-text">高於60度字跡就會消失，但是低於零下十度，字跡就會回復，但是並不會跟一開始寫下去時的顏色一樣濃。
-                        </p>
+                    </p>
                 </div>
             </div>
             <div class="card" style="width: 18rem">
                 <div class="card-body">
                     <h5 class="card-title text-center">筆芯裡的果凍</h5>
-                    
+
                     <p class="card-text">一般我們稱后塞油,真正學名是鋰基酯
-                            功能是隔絕空氣避免墨水乾掉，另外也提供壓力推進出墨
-                            </p>
+                        功能是隔絕空氣避免墨水乾掉，另外也提供壓力推進出墨
+                    </p>
                 </div>
             </div>
             <div class="card" style="width: 18rem">
                 <div class="card-body">
                     <h5 class="card-title text-center">筆頭跑出一根針</h5>
                     <p class="card-text">中性(gel)墨水為了解決遇到空氣會乾掉的問題，除了筆蓋，另外還有設計彈簧筆珠(spring tip)
-                            有兩顆珠頭，一內一外中間夾一個小彈簧，平時隔絕空氣，書寫時透過彈簧頂開裡面那顆珠頭讓墨水流下。<br>
-                            假如你看到小針就是彈簧跑出來‧‧‧可以換一支新筆了!
-                            </p>
+                        有兩顆珠頭，一內一外中間夾一個小彈簧，平時隔絕空氣，書寫時透過彈簧頂開裡面那顆珠頭讓墨水流下。<br>
+                        假如你看到小針就是彈簧跑出來‧‧‧可以換一支新筆了!
+                    </p>
                 </div>
             </div>
         </div>

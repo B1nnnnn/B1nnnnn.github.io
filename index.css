@@ -77,12 +77,16 @@ img{
 @media screen and (min-width: 450px){
     #kinds #bisin p{
     font-size: 2em;
-   
+    }
+   .logowidth{
+    width: 18rem;
     }
 }
 @media screen and (max-width: 450px){
     #kinds #bisin p{
-    font-size: 1.5em;
-   
+    font-size: 1.5em;   
+    }
+    .logowidth{
+    width: 14rem;
     }
 }
